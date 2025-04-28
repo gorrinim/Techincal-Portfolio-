@@ -8,15 +8,19 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e8e8e8;
-      color: #222;
-      line-height: 1.6;
+      background-color: #1a1a1a;
+      color: #eee;
+      background-image: radial-gradient(#2b2b2b 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-attachment: fixed;
     }
     header {
-      background: linear-gradient(to right, #555, #333);
+      background: rgba(50, 50, 50, 0.8);
       color: white;
       text-align: center;
       padding: 60px 20px;
+      position: relative;
+      z-index: 2;
     }
     header h1 {
       font-size: 3em;
@@ -30,20 +34,23 @@
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
+      position: relative;
+      z-index: 2;
     }
     h2 {
       font-size: 2em;
-      color: #444;
+      color: #ccc;
       margin-top: 60px;
-      border-left: 6px solid #999;
+      border-left: 6px solid #888;
       padding-left: 12px;
     }
     .project {
-      background-color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       margin-top: 30px;
+      backdrop-filter: blur(5px);
     }
     .image-grid {
       display: grid;
@@ -55,7 +62,7 @@
       width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
     }
     @media (max-width: 600px) {
       .image-grid {
@@ -63,11 +70,13 @@
       }
     }
     footer {
-      background-color: #333;
-      color: #fff;
+      background-color: rgba(50, 50, 50, 0.8);
+      color: #ddd;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      position: relative;
+      z-index: 2;
     }
   </style>
 </head>
